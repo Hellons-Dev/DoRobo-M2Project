@@ -1,6 +1,7 @@
 # Specifications
 - FM Module : BRAVO-T868
 - Board : STM32-F303K8
+- Antenna : Antenna 1/4 wave length SMA 90deg 868MHz
 
 # Version Details
 - V0.1 : First test of data reading from FM module
