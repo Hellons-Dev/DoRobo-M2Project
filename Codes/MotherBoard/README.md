@@ -1,5 +1,6 @@
 # Specifications
 - Board : STM32-L476RG
+- MBed OS version : MBed 5
 - Antenna : Antenna 1/4 wave length SMA 90deg 868MHz
 - FM Module : BRAVO-T868
 - Gas Sensor 1 : Figaro TGS813-A00
