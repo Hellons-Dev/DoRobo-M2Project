@@ -31,4 +31,4 @@ Odometry will transmit to the Mother board the following Bytes regulary with 10m
   * Next Bytes are the data, keep in mind that the data you are receiving is transmitted lsb meaning if you are receiving for example 2 bytes containing the value "11010100 10110001" your first byte would be "10110001" and the second one is "11010100"
 - In case you received "A":
   * Second and Third Byte are the data, keep in mind that the data you are receiving is transmitted lsb meaning if you are receiving for example the 2 bytes of value "11010100 10110001" your first byte would be "10110001" and the second one is "11010100"
-- You can either recreate your own function or use the existing one called "void SendXY(int x, inty)" that does every previous steps for you and is fully operationnal
+- You can either recreate your own function or use the existing one called "void OdometryReceive(void)" that does every previous steps for you and is fully operationnal when used as RawSerial Interrupt
