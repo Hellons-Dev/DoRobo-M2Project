@@ -25,10 +25,10 @@ To transmit to Odometry you must transmit the following bytes with at least 10 m
 ## Receiving :
 Odometry will transmit to the Mother board the following Bytes regulary with 10ms spacing between each Byte
 - First Byte will be either "X" in ascii, "Y" in ascii or "A" in ascii, representing on the X or Y coordinates or for the "A" the angle of the robot in degrees
-- In case you receive "X" or "Y" :
+- In case you received "X" or "Y" :
   * Second Byte is the sign of the data, 0x01 is "+" and 0x00 is "-"
   * Third Byte is the number of bytes coding the data
   * Next Bytes are the data, keep in mind that the data you are receiving is transmitted lsb meaning if you are receiving for example 2 bytes containing the value "11010100 10110001" your first byte would be "10110001" and the second one is "11010100"
-- In case tou receive "A":
+- In case you received "A":
   * Second and Third Byte are the data, keep in mind that the data you are receiving is transmitted lsb meaning if you are receiving for example the 2 bytes of value "11010100 10110001" your first byte would be "10110001" and the second one is "11010100"
 - You can either recreate your own function or use the existing one called "void SendXY(int x, inty)" that does every previous steps for you and is fully operationnal
