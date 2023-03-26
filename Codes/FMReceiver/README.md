@@ -1,6 +1,7 @@
 # Specifications
 - FM Module : BRAVO-T868
 - Board : STM32-F303K8
+- MBed OS version : MBed 2
 - Antenna : Antenna 1/4 wave length SMA 90deg 868MHz
 
 # Version Details
