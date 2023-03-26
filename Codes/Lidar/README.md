@@ -1,6 +1,7 @@
 # Specifications
 - Lidar : RPLidar A1M8
 - Board : STM32-F446RE
+- MBed OS version : MBed 5
 - Library works with all RPLidar versions
 
 # Version Details
