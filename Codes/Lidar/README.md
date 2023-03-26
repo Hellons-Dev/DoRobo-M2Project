@@ -28,5 +28,5 @@ Data will arrive only when the Lidar Board finished sampling the environement
   * Fourth Byte will be "E" for "End angle of obstacle"
   * Fifth and sixth Byte are the data of the end angle, keep in mind that the data you are receiving is transmitted lsb meaning if you are receiving for example the 2 bytes of value "11010100 10110001" your first byte would be "10110001" and the second one is "11010100"
   * seventh Byte will be "D" for "Minimum distance to obstacle" in millimeters
-  *
+  * Next Bytes are the distance data, keep in mind that the data you are receiving is transmitted lsb meaning if you are receiving for example 2 bytes containing the value "11010100 10110001" your first byte would be "10110001" and the second one is "11010100"
 - You can either recreate your own function or use the existing one called "void SendXY(int x, inty)" that does every previous steps for you and is fully operationnal
