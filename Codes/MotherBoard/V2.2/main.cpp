@@ -17,7 +17,7 @@ Timer TimingLidar;
 Timer Tp;
 Timer Coord;
 
-SOMO somo2(PC_4, PC_5);
+SOMO somo2(PA_0, PA_1);
 
 RawSerial pc(USBTX, USBRX, 115200);
 RawSerial Lidar(PC_10, PC_11, 19200);
@@ -116,8 +116,6 @@ void SendXY(int x, int y){
 
 void OdometryReceive(void){
     char data = Odometry.getc();
-
-    pc.printf("\n\r%#X\n\r",data);
 
     if(ReceivedDataOdometry == 0){
         if(data == 88){
